@@ -1,4 +1,4 @@
-﻿import React from 'react';
+import React from 'react';
 import { useNavigate } from 'react-router-dom';
 import { Globe, CheckCircle, Users, Shield, Zap, BookOpen } from 'lucide-react';
 

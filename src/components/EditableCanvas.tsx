@@ -97,7 +97,7 @@ const EditableCanvas: React.FC<EditableCanvasProps> = ({ canvas, onSave, onLockT
         <div className="flex items-center">
           <span className={`w-3 h-3 rounded-full mr-2 bg-${canvas.color}-500`}></span>
           <span className="capitalize">{canvas.type}</span>
-          <span className="mx-2">•</span>
+          <span className="mx-2">â€¢</span>
           <span className="capitalize">{canvas.status}</span>
         </div>
         <div className="flex items-center">

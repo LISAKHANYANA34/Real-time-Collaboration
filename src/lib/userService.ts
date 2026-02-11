@@ -1,4 +1,4 @@
-﻿import { db } from './firebase';
+import { db } from './firebase';
 import { doc, setDoc, getDoc, updateDoc, serverTimestamp } from 'firebase/firestore';
 import { User } from 'firebase/auth';
 

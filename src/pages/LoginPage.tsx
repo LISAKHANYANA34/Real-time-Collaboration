@@ -1,4 +1,4 @@
-﻿import React, { useState } from 'react';
+import React, { useState } from 'react';
 import { useNavigate } from 'react-router-dom';
 import { Mail, Lock, Globe, Eye, EyeOff, Chrome } from 'lucide-react';
 import { auth, googleProvider } from '../lib/firebase';
