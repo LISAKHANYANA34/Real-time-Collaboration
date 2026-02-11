@@ -36,3 +36,111 @@
     transform: rotate(360deg);
   }
 }
+
+/* Editable Canvas Styles */
+.recent-canvas-item {
+  transition: all 0.2s ease;
+}
+
+.recent-canvas-item:hover {
+  transform: translateY(-2px);
+}
+
+.canvas-edit-mode {
+  display: flex;
+  gap: 8px;
+  align-items: center;
+}
+
+.canvas-edit-input {
+  flex: 1;
+  padding: 8px 12px;
+  border: 2px solid #3b82f6;
+  border-radius: 8px;
+  font-size: 14px;
+  outline: none;
+  transition: border-color 0.2s;
+}
+
+.canvas-edit-input:focus {
+  border-color: #1d4ed8;
+  box-shadow: 0 0 0 3px rgba(59, 130, 246, 0.1);
+}
+
+.canvas-save-btn {
+  padding: 8px 16px;
+  background-color: #10b981;
+  color: white;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  font-size: 14px;
+  transition: background-color 0.2s;
+}
+
+.canvas-save-btn:hover {
+  background-color: #059669;
+}
+
+.canvas-cancel-btn {
+  padding: 8px 16px;
+  background-color: #ef4444;
+  color: white;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  font-size: 14px;
+  transition: background-color 0.2s;
+}
+
+.canvas-cancel-btn:hover {
+  background-color: #dc2626;
+}
+
+/* Interactive Canvas Workspace */
+.canvas-node {
+  position: absolute;
+  padding: 16px;
+  background: white;
+  border-radius: 12px;
+  box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1);
+  cursor: move;
+  min-width: 200px;
+}
+
+.canvas-node.task {
+  border-left: 4px solid #3b82f6;
+}
+
+.canvas-node.note {
+  border-left: 4px solid #10b981;
+}
+
+.canvas-node.file {
+  border-left: 4px solid #8b5cf6;
+}
+
+.node-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 12px;
+}
+
+.node-content {
+  min-height: 60px;
+  padding: 8px;
+  border: 1px solid #e5e7eb;
+  border-radius: 6px;
+  outline: none;
+}
+
+.node-content:focus {
+  border-color: #3b82f6;
+}
+
+.node-actions {
+  display: flex;
+  gap: 8px;
+  margin-top: 12px;
+}
